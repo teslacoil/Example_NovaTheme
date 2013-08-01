@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Icons are themed by specifiy their activity component name and the drawable to replace it with -->
+
+    <!-- Replace phone icon on Nexus/AOSP devices -->
+    <item component="ComponentInfo{com.android.contacts/.activities.DialtactsActivity}" drawable="ic_phone_red" />
+    <!-- Phone on On HTC 4.0 devices -->
+    <item component="ComponentInfo{com.android.htccontacts/.DialerTabActivity}" drawable="ic_phone_red" />
+    <!-- Phone on Sony devices -->
+    <item component="ComponentInfo{com.sonyericsson.android.socialphonebook/.DialerEntryActivity}" drawable="ic_phone_red" />
+
+    <!-- Alternatively,
+         Nova Launcher maintains an internal database of common system icons to theme.
+         For example the :PHONE line below does the same as all the lines above.
+         Note that only non-Play Store system apps are included in this, third-party apps,
+         or Play Store apps such as Chrome, will not be included and must be themed manually.
+
+         The advantage to using Nova's database is that it likely covers more devices/roms
+         than you would otherwise, and future updates of Nova Launcher can support
+         future devices/roms as well.
+
+         The disadvantage is that other launchers do not support it and in some cases
+         you may be able to update your theme for a new device before Nova Launcher is.
+
+         If desired you can use both methods, allowing Nova to catch any you miss or your
+         ComponentInfo lines to catch any that Nova misses.
+    -->
+    <!--
+        <item component=":PHONE" drawable="ic_phone_red" />
+    -->
+
+    <!-- Replace system's SMS icon -->
+    <item component=":SMS" drawable="ic_sms_red" />
+
+    <item component=":BROWSER" drawable="ic_browser_red" />
+
+    <!-- Give Chrome the browser icon, but in green -->
+    <item component="ComponentInfo{com.android.chrome/com.google.android.apps.chrome.Main}" drawable="ic_browser_green" />
+    <!-- And Chrome Beta a jellybean icon -->
+    <item component="ComponentInfo{com.chrome.beta/com.google.android.apps.chrome.Main}" drawable="ic_jellybean_green" />
+
+    <!-- You may also replace the app drawer icon, which does not have a traditional component name -->
+    <item component=":LAUNCHER_ACTION_APP_DRAWER" drawable="ic_allapps" />
+
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Specify every icon to be shown in the manual icon picker seen
+         when long-pressing on an icon and selecting Edit then tapping
+         the icon
+    -->
+    <item drawable="ic_browser_red" />
+    <item drawable="ic_browser_green" />
+    <item drawable="ic_browser_blue" />
+
+    <!-- Optionally you can add category dividers,
+         the organization and names of these categories is up to you
+    -->
+    <category title="SMS" />
+    <item drawable="ic_sms_red" />
+    <item drawable="ic_sms_green" />
+    <item drawable="ic_sms_blue" />
+
+    <category title="Blue" />
+    <item drawable="ic_jellybean_blue" />
+    <item drawable="ic_browser_blue" />
+    <item drawable="ic_email_blue" />
+    <item drawable="ic_phone_blue" />
+    <item drawable="ic_sms_blue" />
+
+
+    <!-- Generaly you should list every icon here, but for this demo we won't -->
+
+</resources>

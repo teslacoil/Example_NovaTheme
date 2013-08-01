@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Example NovaTheme</string>
+    <string name="apply_icon_theme">Apply Icon Theme</string>
+    <string name="app_slogan">Exampling it up since 2013</string>
+</resources>
