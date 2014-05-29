@@ -14,7 +14,8 @@
          Nova Launcher maintains an internal database of common system icons to theme.
          For example the :PHONE line below does the same as all the lines above.
          Note that only non-Play Store system apps are included in this, third-party apps,
-         or Play Store apps such as Chrome, will not be included and must be themed manually.
+         or Play Store apps such as Chrome, or Google Calendar, will not be included and
+         must be themed manually.
 
          The advantage to using Nova's database is that it likely covers more devices/roms
          than you would otherwise, and future updates of Nova Launcher can support
@@ -42,5 +43,19 @@
 
     <!-- You may also replace the app drawer icon, which does not have a traditional component name -->
     <item component=":LAUNCHER_ACTION_APP_DRAWER" drawable="ic_allapps" />
+
+    <!-- As of Nova Launcher 3.0, there is special support for calendar icons. You may specify a prefix
+         for where Nova Launcher can find 31 drawables (ic_calendar_1, ic_calendar_2, etc). One for every
+         day of the month.
+         This is only for use with calendar apps. Please make your calendar icons prettyier than mine. -->
+    <calendar component="ComponentInfo{com.android.calendar/.AllInOneActivity}" prefix="ic_calendar_" />
+
+    <!-- For launchers that don't support the calendar tag, use this single icon as a fallback
+         Nova will ignore "item" tags if a given component has a "calendar" tag, but other launchers will use it -->
+    <item component="ComponentInfo{com.android.calendar/.AllInOneActivity}" drawable="ic_calendar" />
+
+    <!-- You can also use Nova's :CALENDAR shortcut to theme the system calendar apps in Nova's internal database
+         Note that this does not include Google Calendar as that is available on Google Play -->
+    <calendar component=":CALENDAR" prefix="ic_calendar_" />
 
 </resources>
