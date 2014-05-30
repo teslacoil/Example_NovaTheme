@@ -3,7 +3,7 @@ Example Nova Launcher Theme
 
 Nova Launcher is the highly customizable launcher for Android. Part of this customization comes from developers such as yourself.
 
-This document covers the theme format for Nova Launcher v2.2.
+This document covers the theme format for Nova Launcher.
 
 Most launchers, including Nova Launcher, support a superset of the theme format from Go Launcher.
 
