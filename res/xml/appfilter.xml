@@ -43,6 +43,8 @@
 
     <!-- You may also replace the app drawer icon, which does not have a traditional component name -->
     <item component=":LAUNCHER_ACTION_APP_DRAWER" drawable="ic_allapps" />
+    <!-- If Nova Settings > Night Mode > Drawer icon is enabled, this will be used in night mode -->
+    <item component=":LAUNCHER_ACTION_APP_DRAWER_NIGHT" drawable="ic_allapps_night" />
 
     <!-- As of Nova Launcher 3.0, there is special support for calendar icons. You may specify a prefix
          for where Nova Launcher can find 31 drawables (ic_calendar_1, ic_calendar_2, etc). One for every

@@ -60,7 +60,7 @@ The keywords supported are:
 * `:PHONE`
 * `:SMS`
 
-Additionally Nova's app drawer icon can be themed with `:LAUNCHER_ACTION_APP_DRAWER`
+Additionally Nova's app drawer icon can be themed with `:LAUNCHER_ACTION_APP_DRAWER` and `:LAUNCHER_ACTION_APP_DRAWER_NIGHT`. The night version is used when in night mode and the user has Night mode > Drawer icon enabled in Nova Settings.
 
 A full example is:
 
